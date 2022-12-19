@@ -1,0 +1,114 @@
+:root{
+    --color_letra: white;
+    --color_fondotitulos: rgb(160, 217, 149, 0.8);
+}
+
+.contenedor{
+    width: 100%;
+    height: 500px;
+}
+.tarjetas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 350px;
+    height: 250px;
+    margin: 12px ;
+    border-radius: 20px;
+    background: #f5f5f5;
+    position: relative;
+    padding: 1.8rem;
+    border: 2px solid #4CACBC;
+    transition: 0.5s ease-out;
+    overflow: visible;
+}
+
+.card-details {
+    color: white;
+    height: 100%;
+    gap: .5em;
+    display: grid;
+    place-content: center;
+}
+
+.card-button {
+    transform: translate(-50%, 125%);
+    width: 60%;
+    border-radius: 1rem;
+    border: none;
+    background-color: #A0D995;
+    color: #fff;
+    font-size: 1rem;
+    padding: .5rem 1rem;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    opacity: 0;
+    transition: 0.3s ease-out;
+}
+
+.text-body {
+    color: var(--color_letra);
+    font-size: 1.5rem;
+    background-color:var(--color_fondotitulos);
+    border-radius: 5.5px;
+}
+.text-title {
+    font-size: 1.7em;
+    font-weight: lighter;
+    background-color:var(--color_fondotitulos);
+    border-radius: 5.5px;
+    padding: 6px;
+    text-align: unset;
+}
+
+.card:hover {
+    border-color: #A0D995;
+    box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+}
+
+.card:hover .card-button {
+    transform: translate(-50%, 50%);
+    opacity: 1;
+}
+
+.uno{
+    background: url(../img/madrid.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+}
+.dos{
+    background: url(../img/playacancun.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.tres{
+    background: url(../img/miami.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.cuatro{
+    background: url(../img/rio.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.cinco{
+    background: url(../img/nueva.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.seis{
+    background: url(../img/baya.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}

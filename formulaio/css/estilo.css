@@ -1,0 +1,420 @@
+:root{
+    --color_letra_header_nav: white;
+    --letra_header_titulo:'Noto Serif JP', serif;
+    --letra_header_subtitulo:'Maven Pro', sans-serif;
+    --color_letra_titulos: black;
+    --letra_titulos:'Archivo Narrow', sans-serif;
+    --letra_viajesy_somos: 'Questrial', sans-serif;
+
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:white;
+    font-family:'Oswald', sans-serif; ;
+}
+
+nav{
+    width: 100%;
+    color: var(--color_letra_header_nav);
+    position: fixed; 
+    top: 0;
+    z-index: 100;
+
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+
+}
+nav li{
+    padding: 5px;
+    transition: all 2s;
+
+    list-style: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+nav ul li a{
+    display: block;
+    padding: 15px;
+    color: var(--color_letra_header_nav);
+    text-decoration: none;
+    text-transform: uppercase;
+
+}
+nav ul li:hover{
+    background: #6CC4A1;
+
+} 
+.toggle-menu{
+    position: absolute;
+    top: 0.5rem;
+    right: 1.5rem;
+    cursor: pointer;
+    filter: invert(1);
+    width: 40px;
+    z-index: 10;
+    display: none;
+}
+
+img{
+    max-width: 100%;
+}
+
+header{
+    width: 100%;
+    height: 600px;
+    background-image: url("../img/mapa.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: scroll;
+}
+.nombre{
+    width: 45%;
+    height: 150px;
+    position: absolute;
+    top:160px;
+}
+
+header h1{
+    text-align: center;
+    font-size: 100px;
+    color: var(--color_letra_header_nav);
+    margin: 30px 0 auto;
+    font-family: var(--letra_header_titulo);
+}
+.nombre h2{
+    text-align: center;
+    font-size: 30px;
+    color: var(--color_letra_header_nav);
+    margin-top: 20px 0 auto;
+    font-family: var(--letra_header_subtitulo);
+}
+
+/*Seccion Viajes*/
+.viaje{
+    padding: 20px;
+    width: 80%;
+    margin: auto;
+    text-align: start;
+    margin-top: 10px;
+    font-size: 18px;
+
+}
+.viaje h2{
+    font-family: var(--letra_titulos);
+
+}
+.viaje p{
+    width: 90%;
+    margin: 15px;
+    line-height: 150%;
+    font-family: var(--letra_viajesy_somos)
+}
+.contenedor_uno h1{
+    color: var(--color_letra_titulos);
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.5rem;
+    margin-left: 150px;
+    text-align: justify;
+    font-family: var(--letra_titulos)
+}
+.contenedor_dos h1{
+    color: var(--color_letra_titulos);
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.5rem;
+    margin-top: 2.5rem;
+    margin-left: 150px;
+    text-align: justify;
+    font-family: var(--letra_titulos);
+}
+
+/*Quienes somos*/
+.somos{
+    width: 100%;
+    background-color: #6CC4A1;
+    margin: 60px auto 30px auto;
+    padding: 15px 20px 15px 20px;
+    display: flex;
+}
+.texto_somos{
+    width: 50%;
+    height: 100%;
+}
+.texto_somos h2{
+    color: white;
+    line-height: 200%;
+    width: 65%;
+    padding: 2px 50px 0 40px;
+    text-align: start;
+    font-family: var(--letra_viajesy_somos);
+}
+.texto_somos p{
+    color: white;
+    width: 100%;
+    margin: 5px 15px;
+    line-height: 150%;
+    padding: 2px 35px 10px 45px;
+    text-align: start;
+    font-family: sans-serif;
+    font-family: var(--letra_viajesy_somos);
+} 
+.avion img{
+    text-align: center;
+    padding: 30px 80px 10px 50px;
+    }
+
+
+/*Contacto y Redes*/
+
+.info{
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    display: flex;
+
+}
+.contacto{
+    display: inline-block;
+    width: 45% ;
+    margin: auto 20px auto 60px;
+    padding: 40px 60px 40px 60px;
+    
+}
+.textoform{
+    line-height: 200%;
+    text-align: left;
+}
+fieldset{
+    border: 1px solid #999;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: white;
+}
+.input {
+    max-width: 190px;
+    height: 44px;
+    background-color: #05060f0a;
+    border-radius: .5rem;
+    padding: 0 1rem;
+    border: 2px solid transparent;
+    font-size: 1rem;
+    transition: border-color .3s cubic-bezier(.25,.01,.25,1) 0s, color .3s cubic-bezier(.25,.01,.25,1) 0s,background .2s cubic-bezier(.25,.01,.25,1) 0s;
+    margin: 1px 25px 1px 25px;
+}
+
+.label {
+    display: block;
+    margin-bottom: .3rem;
+    font-size: .9rem;
+    font-weight: bold;
+    color: #05060f99;
+    transition: color .3s cubic-bezier(.25,.01,.25,1) 0s;
+    margin: 1px 25px 1px 25px;
+}
+textarea{
+    border: 2px solid #ccc;
+    margin: 1px 25px 1px 25px;
+}
+.input:hover, .input:focus, .input-group:hover .input {
+    outline: none;
+    border-color: #05060f;
+}
+
+.input-group:hover .label, .input:focus {
+    color: #05060fc2;
+}
+.enviar{
+    width: 20%;
+    background-color: rgb(76, 172, 188);
+    color: white;
+    padding: 12px 20px;
+    margin: 3px 25px 1px 25px;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.redes{
+    width: 45% ;
+    margin: 40px auto;
+    padding: 50px;
+    font-size: 1.5rem;
+}
+
+
+
+footer{
+    width: 100%;
+    height: 60px;
+    background-color: #4CACBC;
+    text-align: center;
+    line-height: 50px;
+    letter-spacing: 1px;
+}
+
+
+
+
+
+@media (max-width: 1024px) {
+
+    /*Titulo*/
+    .nombre{
+        width: 45%;
+        height: 150px;
+        position: absolute;
+        top:160px;
+    }
+    header h1{
+        font-size: 80px;
+        margin: auto auto auto 30px;
+    }
+    .nombre h2{
+        font-size: 30px;
+        margin: auto auto auto 35px;
+    }
+    .viaje{
+        font-size: 15px;
+    }
+    .viaje h2{
+        font-size: 15px;
+    }
+    .contenedor_uno h1{
+        font-size: 18px ;
+        margin: 15px auto 10px 50px;
+    }
+    .contenedor_dos h1{
+        font-size: 18px;
+        margin: 15px auto 10px 50px;
+    }
+    .tarjetas{
+        flex-wrap: wrap-reverse;
+    }
+/*Quienes somos*/
+    .somos{
+        flex-wrap: wrap;
+    }
+    .texto_somos h2{
+        padding: 2px 5px 0 10px;
+        width:100% ;
+        font-size: 25px;
+    }
+    .texto_somos p{
+        width: 600px;
+        margin: 5px 15px;
+        padding: 2px 4px 2px 15px;
+        font-size: 18px;
+    } 
+    .avion img{
+        display: none;
+    }
+
+    .contacto h2{
+        font-size: 22px;
+    }
+    .redes{
+        font-size: 20px;
+    }
+    .enviar{
+        padding: 5px;
+    }
+    footer{
+        height: 100%;
+        font-size: 12px;
+    }
+}
+
+
+
+@media (max-width: 600px) {
+    /*Menu*/
+    .toggle-menu{
+        display: inline;
+    }
+    .main-menu{
+       margin: 22px auto;
+        transform: translateY(-100%)
+    }
+    .main-menu--show{
+        transform: translateY(0%);
+    }
+/*Titulo*/
+    header h1{
+        font-size: 70px;
+    }
+    .nombre h2{
+        font-size: 25px;
+    }
+    .viaje{
+        font-size: 13px;
+        margin: 10px 20px ;
+    }
+    .viaje h2{
+        font-size: 13px;
+    }
+    
+    .card .uno{
+        width: 150px;
+        height: 50px;
+        margin: 80px 20px;
+    }
+
+/*Quienes somos*/
+.somos{
+        flex-wrap: wrap;
+    }
+.texto_somos h2{
+    padding: 2px 5px 0 10px;
+    width:100% ;
+    font-size: 20px;
+}
+.texto_somos p{
+    width: 350px;
+    margin: 5px 15px;
+    padding: 2px 4px 2px 15px;
+    font-size: 13px;
+} 
+.avion img{
+display: none;
+    }
+
+/*contacto y redes*/
+    .info{
+        flex-wrap: wrap;
+    }
+    
+    .contacto h2{
+        font-size: 11px;
+    }
+    
+    .contacto{
+        width: 90%;
+        margin: 20px auto ;
+        justify-content: center;
+    }
+    .redes{
+        margin: 20px auto;
+        padding: 5px 5px;
+        font-size: 13px;
+    }
+    footer{
+        width: 100%;
+        height: 100%;
+        font-size: 10px;
+    }
+
+}
